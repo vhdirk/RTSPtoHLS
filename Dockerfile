@@ -12,7 +12,7 @@ ARG TARGETOS TARGETARCH TARGETVARIANT
 ENV CGO_ENABLED=0
 RUN go get \
     && go mod download \
-    && GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT#"v"} go build -a -o rtsp-to-web
+    && GOOS=${TARGETOS} GOARCH=${TARGETARCH} GOARM=${TARGETVARIANT#"v"} go build -a -o rtsp-to-hls
 
 FROM alpine:3.16
 

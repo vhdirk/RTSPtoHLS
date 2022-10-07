@@ -1,4 +1,4 @@
-module github.com/deepch/RTSPtoWSMP4f
+module github.com/deepch/RTSPtoHLS
 
 go 1.15
 
