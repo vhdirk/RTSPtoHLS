@@ -3,9 +3,10 @@
     "http_port": ":8083"
   },
   "streams": {
-    "H264_AAC": {
-      "on_demand": false,
-      "url": "rtsp://171.25.232.20/d7b92541b4914c8e98104cba907864f8"
+    "3dprinter": {
+      "on_demand": true,
+      "disable_audio": false,
+      "url": "rtsp://superuser:superuser@192.168.2.71/stream1"
     }
   }
 }
